@@ -17,7 +17,3 @@ Présenter mon profil, mon CV et mon portfolio dans le cadre de la SAE 1.04.
 - CV (PDF intégré + téléchargement)
 - Portfolio (intégration Google Drive)
 
-## Lancer le projet en local
-```bash
-composer install
-symfony serve
