@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}CV – Lobe Ndiaye{% endblock %}
+
+{% block body %}
+
+<div class="page-container">
+
+    <!-- EN-TÊTE CV -->
+    <section class="hero">
+        <h1>Curriculum Vitae</h1>
+        <p class="subtitle">
+            Étudiante en Réseaux & Télécommunications – Projet professionnel orienté réseaux et télécoms
+        </p>
+    </section>
+
+    <!-- CONTENU CV -->
+    <section class="card">
+        <h2>Mon CV</h2>
+        <p>
+            Vous trouverez ci-dessous mon curriculum vitae détaillant mon parcours de formation,
+            mes expériences professionnelles ainsi que mes compétences.
+        </p>
+
+        <!-- AFFICHAGE PDF -->
+        <div class="cv-viewer">
+            <iframe
+                src="{{ asset('CV_Ndiaye_Lobe.pdf') }}"
+                width="100%"
+                height="800"
+                style="border: none; border-radius: 16px;">
+            </iframe>
+        </div>
+
+        <!-- ACTIONS -->
+        <div class="actions">
+            <a href="{{ asset('CV_Ndiaye_Lobe.pdf') }}"
+               class="btn-primary"
+               download>
+                📄 Télécharger mon CV
+            </a>
+        </div>
+    </section>
+
+</div>
+
+{% endblock %}

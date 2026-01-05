@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portfolio | Lobe Ndiaye{% endblock %}
+
+{% block body %}
+<div class="soft-card">
+
+  <h1 class="mb-3">Portfolio</h1>
+
+  <p class="lead mb-4">
+    Cette page présente mon portfolio regroupant mes projets,
+    mes productions académiques ainsi que les pièces justificatives
+    associées à ma formation en Réseaux et Télécommunications.
+  </p>
+
+  {# ===== IFRAME GOOGLE DRIVE ===== #}
+  <div style="
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* format 16:9 */
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,.35);
+  ">
+    <iframe
+      src="https://docs.google.com/spreadsheets/d/1PSNMaXyQrq6nrCNq642eB2xLabIEDghpaqoCleuXxfs/edit?gid=0#gid=0"
+      style="
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      "
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  {# ===== BOUTON OUVERTURE DRIVE ===== #}
+  <div class="text-center mt-4">
+    <a
+      href="https://docs.google.com/spreadsheets/d/1PSNMaXyQrq6nrCNq642eB2xLabIEDghpaqoCleuXxfs/edit?gid=0#gid=0"
+      target="_blank"
+      rel="noopener"
+      class="btn btn-main">
+      Ouvrir le portfolio sur Google Drive
+    </a>
+  </div>
+
+  {# ===== TEXTE EXPLICATIF ===== #}
+  <div class="mt-4 text-secondary">
+    <p>
+      Le document ci-dessus contient l’ensemble de mon travail réalisé
+      dans le cadre de mes SAE, ainsi que des éléments permettant
+      d’évaluer mes compétences techniques, méthodologiques et réflexives.
+    </p>
+  </div>
+
+</div>
+{% endblock %}

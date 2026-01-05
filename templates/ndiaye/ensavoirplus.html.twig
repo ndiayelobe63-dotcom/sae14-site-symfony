@@ -1,0 +1,107 @@
+{% extends 'base.html.twig' %}
+{% block title %}About me | Lobe Ndiaye{% endblock %}
+
+{% block body %}
+<div class="soft-card">
+
+  <!-- INTRO -->
+  <section class="mb-5">
+    <h1 class="mb-3">More about me</h1>
+    <p class="lead">
+      This page gives a deeper insight into my personality, my interests,
+      and my long-term academic and professional goals.
+    </p>
+  </section>
+
+  <!-- LOISIRS & PASSIONS -->
+  <section class="mb-5">
+    <h2 class="mb-4">My interests & passions</h2>
+
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="soft-card h-100 text-center">
+          <img src="{{ asset('images/reading.jpg') }}" class="img-fluid rounded mb-3">
+          <h5>📚 Reading</h5>
+          <p class="small">
+            Reading allows me to broaden my knowledge, improve my concentration
+            and discover new perspectives.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="soft-card h-100 text-center">
+          <img src="{{ asset('images/cooking.jpg') }}" class="img-fluid rounded mb-3">
+          <h5>🍳 Cooking</h5>
+          <p class="small">
+            Cooking helps me develop creativity, organization and precision,
+            skills that are also useful in technical fields.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="soft-card h-100 text-center">
+          <img src="{{ asset('images/cinema.jpg') }}" class="img-fluid rounded mb-3">
+          <h5>🎬 Cinema</h5>
+          <p class="small">
+            Cinema stimulates my imagination and critical thinking,
+            while offering cultural openness.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="soft-card h-100 text-center">
+          <img src="{{ asset('images/travel.jpg') }}" class="img-fluid rounded mb-3">
+          <h5>✈️ Travel</h5>
+          <p class="small">
+            Traveling helps me discover new cultures, improve my adaptability
+            and strengthen my interest in international experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS & ENVIES -->
+  <section class="mb-5">
+    <h2 class="mb-3">My academic ambitions</h2>
+    <p>
+      After completing my BUT in Networks and Telecommunications,
+      I aim to pursue further studies in order to strengthen my technical
+      and theoretical skills.
+    </p>
+
+    <ul>
+      <li>
+        Integrate an <strong>engineering school</strong> specialized in
+        computer networks and telecommunications.
+      </li>
+      <li>
+        Complete a <strong>DUETI</strong> or an <strong>academic year abroad</strong>
+        to improve my English and gain international experience.
+      </li>
+      <li>
+        Develop strong skills in network design, configuration and optimization.
+      </li>
+    </ul>
+  </section>
+
+  <!-- OBJECTIF FINAL -->
+  <section>
+    <h2 class="mb-3">Professional goal</h2>
+    <p>
+      My long-term objective is to become a
+      <strong>Network Engineer</strong>, working on the design,
+      configuration and evolution of enterprise or operator networks.
+    </p>
+
+    <p>
+      I am particularly interested in environments that require
+      rigor, technical expertise and continuous learning.
+    </p>
+  </section>
+
+</div>
+{% endblock %}
